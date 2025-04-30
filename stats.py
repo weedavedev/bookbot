@@ -13,3 +13,11 @@ def count_chars(text):
 
     return chars
     
+def sorted_list(text):
+    chars = count_chars(text)
+    result = [] 
+    
+    for char, count in chars.items():
+        result.append({"char": char, "num": count})
+
+    return result
